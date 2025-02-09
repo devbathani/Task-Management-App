@@ -131,9 +131,6 @@ class HomeProvider extends ChangeNotifier {
       taskList[taskIndex].taskDescription = newDescription;
 
       await _taskBox.put(taskId, taskList[taskIndex]);
-      print(taskId);
-      print(newName);
-      print(newDescription);
       if (await _isOnline()) {
         await _firestore!.collection('tasks').doc(taskId.toString()).update({
           'taskName': newName,

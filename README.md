@@ -1,16 +1,48 @@
-# task_management_app
+# Task Management App 📋
 
-A new Flutter project.
+A **Task Management App** built using **Flutter** and **Firebase**, following **Domain-Driven Design (DDD)** for better scalability and maintainability.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ **Task Creation** – Add tasks with descriptions and timestamps.
+- ✅ **Offline Support** – Stores tasks locally using **Hive**.
+- ✅ **Firebase Sync** – Automatically syncs tasks to Firestore when online.
+- ✅ **Duplicate Handling** – Prevents duplicate task entries.
+- ✅ **Swipe Actions** – Swipe left to delete, swipe right to update.
+- ✅ **Sync Indicator** – The sync button shakes when data needs to be updated.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Tech Stack
+
+| Technology             | Purpose                              |
+| ---------------------- | ------------------------------------ |
+| **Flutter**            | Cross-platform UI development        |
+| **Hive**               | Local storage for offline support    |
+| **Firebase Firestore** | Cloud database for real-time syncing |
+| **Firebase Core**      | Firebase initialization              |
+| **Provider**           | State management                     |
+
+---
+
+## 📂 Folder Structure
+
+This project follows **Domain-Driven Design (DDD)** to maintain **scalability** and **separation of concerns**.
+
+```
+lib/
+│── configs/          # Configuration files
+│── core/             # Core utilities, base classes
+│── domain/           # Entities, models, and use cases
+│── gen/              # Auto-generated files
+│── infrastructure/   # Data sources, repositories, Firebase interactions
+│── injection/        # Dependency injection setup
+│── presentation/     # UI and widgets
+│── providers/        # State management (Provider)
+│── routing/          # App navigation and routing
+│── utils/            # Utility functions and helpers
+│── firebase_options.dart # Firebase setup
+│── main.dart         # Main application entry point
+```
