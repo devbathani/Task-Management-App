@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "623438032357",
+    "project_id": "acme-task-app",
+    "storage_bucket": "acme-task-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623438032357:android:1bed49494f0f8a93ca530c",
+        "android_client_info": {
+          "package_name": "com.example.task_management_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ3c_L7AJABDmDnrJuGGRfFCnHBwGriqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
